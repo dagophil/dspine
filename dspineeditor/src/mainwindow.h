@@ -8,12 +8,15 @@ namespace Ui
 class DSpineEditorMainWindowUi;
 }
 
-class DSpineEditorMainWindow : public QMainWindow
+namespace DSpineEditor
+{
+class MainWindow : public QMainWindow
 {
 public:
-    explicit DSpineEditorMainWindow(QWidget* const f_parent = nullptr);
-    virtual ~DSpineEditorMainWindow();
+    explicit MainWindow(QWidget* const f_parent = nullptr);
+    virtual ~MainWindow();
 
 private:
     std::unique_ptr<Ui::DSpineEditorMainWindowUi> m_ui;
 };
+}
